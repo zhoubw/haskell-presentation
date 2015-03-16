@@ -1,0 +1,24 @@
+Haskell Presentation
+
+- Functional programming language
+- basically tell the computer what things are
+- no double declarations
+ - referential transparency: reliable functions
+- basically transforming static data
+- * static types
+- type inference
+
+- basics
+ - math
+  - succ xf
+  
+ - booleans
+
+- functions
+ - addMe x = x + 1
+
+- lists
+ - * strings
+
+- bigger functions
+- even bigger functions
