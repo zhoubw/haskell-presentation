@@ -3,22 +3,58 @@ Haskell Presentation
 - Functional programming language
 - basically tell the computer what things are
 - no double declarations
- - referential transparency: reliable functions
+ - referential transparency: reliable functions - "pure"
+ - no side effects
 - basically transforming static data
 - * static types
 - type inference
 
+
 - basics
  - math
+  - let a = 2
   - succ xf
   
  - booleans
 
+
+- lists
+  - adding lists ++
+  - faster adding to front: :
+  - * strings
+  - adding strings
+  - search index: !!
+  - reverse, maximum, minimum
+  - Texas ranges!! [1..20] [1, 3 .. 21]
+   - DON'T USE FLOATS
+  - list comprehensions
+   - [x * 5 | x <- [1..20]]
+
 - functions
  - addMe x = x + 1
 
-- lists
- - * strings
+- types
+ - :t : identify type
+ - function: map type to type
+  - addThree :: Int -> Int -> Int -> Int
+  - addThree (x y z) = x + y + z
 
-- bigger functions
-- even bigger functions
+- pattern matching
+ - kinda like switches!
+ - areYouX :: (Integral a) => a -> String
+ - areYouX 1 = "Are you 1?"
+ - areYouX 2 = "Are you 2?"
+ - areYouX x = "nope"
+
+ - recursion
+  - factorial :: (Integral a) => a -> a
+  - factorial 0 = 1
+  - factorial x = x * factorial(x-1)
+
+- currying
+ - Haskell functions only accept one argument
+ - max 1 2 is (max 1) 2
+
+- "data"
+ - basically define your own type
+ - data Int = -2147483648 | -2147483647 | ... | -1 | 0 | 1 | 2 | ... | 2147483647
