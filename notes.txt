@@ -1,4 +1,5 @@
 Haskell Presentation
+Everything will be done on ghci
 
 - Functional programming language
 - basically tell the computer what things are
