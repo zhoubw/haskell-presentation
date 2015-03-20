@@ -3,7 +3,6 @@ Everything will be done on ghci
 
 - Functional programming language
 - basically tell the computer what things are
-- no double declarations
  - referential transparency: reliable functions - "pure"
  - no side effects
 - basically transforming static data
